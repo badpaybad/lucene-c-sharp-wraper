@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04AF9C1B-37D7-4541-9622-A8150A3E4A81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DucLuyenKim.LuceneIndex</RootNamespace>
+    <AssemblyName>DucLuyenKim.LuceneIndex</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\NET40\bin\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractDocument.cs" />
+    <Compile Include="ISearchProvider.cs" />
+    <Compile Include="LuceneSearchProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\ACKNOWLEDGEMENTS.txt" />
+    <Content Include="dll\CHANGES.txt" />
+    <Content Include="dll\LICENSE.txt" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Analyzers.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Analyzers.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Core.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Core.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.FastVectorHighlighter.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.FastVectorHighlighter.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Highlighter.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Highlighter.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Memory.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Memory.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Queries.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Queries.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Regex.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Regex.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.SimpleFacetedSearch.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.SimpleFacetedSearch.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Snowball.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Snowball.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Spatial.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Spatial.NTS.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Spatial.NTS.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.Spatial.pdb" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.SpellChecker.dll" />
+    <Content Include="dll\NET35\bin\Contrib\Lucene.Net.Contrib.SpellChecker.pdb" />
+    <Content Include="dll\NET35\bin\Demo\Lucene.Net.Demo.Common.dll" />
+    <Content Include="dll\NET35\bin\Demo\Lucene.Net.Demo.Common.pdb" />
+    <Content Include="dll\NET35\bin\Lucene.Net.dll" />
+    <Content Include="dll\NET35\bin\Lucene.Net.pdb" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.Analyzers.XML" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.Core.XML" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.FastVectorHighlighter.xml" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.Highlighter.XML" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.Memory.XML" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.Queries.XML" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.Regex.xml" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.SimpleFacetedSearch.xml" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.Snowball.XML" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.Spatial.NTS.xml" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.Spatial.XML" />
+    <Content Include="dll\NET35\doc\Contrib\Lucene.Net.Contrib.SpellChecker.XML" />
+    <Content Include="dll\NET35\doc\Demo\Lucene.Net.Demo.Common.XML" />
+    <Content Include="dll\NET35\doc\Lucene.Net.XML" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Analyzers.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Analyzers.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Core.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Core.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.FastVectorHighlighter.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.FastVectorHighlighter.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Highlighter.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Highlighter.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Memory.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Memory.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Queries.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Queries.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Regex.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Regex.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.SimpleFacetedSearch.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.SimpleFacetedSearch.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Snowball.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Snowball.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Spatial.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Spatial.NTS.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Spatial.NTS.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.Spatial.pdb" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.SpellChecker.dll" />
+    <Content Include="dll\NET40\bin\Contrib\Lucene.Net.Contrib.SpellChecker.pdb" />
+    <Content Include="dll\NET40\bin\Demo\Lucene.Net.Demo.Common.dll" />
+    <Content Include="dll\NET40\bin\Demo\Lucene.Net.Demo.Common.pdb" />
+    <Content Include="dll\NET40\bin\Lucene.Net.dll" />
+    <Content Include="dll\NET40\bin\Lucene.Net.pdb" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.Analyzers.XML" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.Core.XML" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.FastVectorHighlighter.xml" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.Highlighter.XML" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.Memory.XML" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.Queries.XML" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.Regex.xml" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.SimpleFacetedSearch.xml" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.Snowball.XML" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.Spatial.NTS.xml" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.Spatial.XML" />
+    <Content Include="dll\NET40\doc\Contrib\Lucene.Net.Contrib.SpellChecker.XML" />
+    <Content Include="dll\NET40\doc\Demo\Lucene.Net.Demo.Common.XML" />
+    <Content Include="dll\NET40\doc\Lucene.Net.XML" />
+    <Content Include="dll\NOTICE.txt" />
+    <Content Include="dll\README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
